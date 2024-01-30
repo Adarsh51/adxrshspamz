@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Dubey</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('adarsh-dubey.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            border: 8px solid #b18585;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-top: 300px; /* Adjusted to move the photo downwards */
+            
+        }
+
+        .heart {
+            font-size: 36px;
+            color: red;
+            animation: bounceHeart 0.5s infinite alternate;
+        }
+
+        @keyframes bounceHeart {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: rgb(177, 177, 255);
+            text-decoration: none;
+        }
+
+        h1 {
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <img src="adarsh-dubey.jpeg" alt="Adarsh Dubey">
+        <div class="heart">&#10084;</div>
+        <button onclick="followAdarsh()">Click to follow</button>
+    </section>
+
+    <script>
+        function followAdarsh() {
+            window.open("https://www.instagram.com/adxrshspamz/", "_blank");
+        }
+    </script>
+</body>
+</html>
